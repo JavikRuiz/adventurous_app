@@ -1,13 +1,12 @@
-import { HomeComponent } from './home/home.component';
-import { GaleriaGeneralComponent } from './galeria-general/galeria-general.component';
+import { WebPageComponent } from './web-page/web-page.component';
 import { AdminComponent } from './admin/admin.component';
-import {Routes, RouterModule} from  '@angular/router';
+import { Routes, RouterModule } from  '@angular/router';
 import { ModuleWithProviders } from '@angular/core';
+import { webRoutes } from './web-page/web.routes';
 
 const appRoutes: Routes = [
-  {path: '',redirectTo:'/home', pathMatch : 'full'},
-  {path: 'home', component: HomeComponent},
-  {path: 'galeria_general', component: GaleriaGeneralComponent},
+  {path: '',redirectTo:'/web_page', pathMatch : 'full'},
+  {path: 'web_page', component: WebPageComponent, children:webRoutes},
   {path: 'admin', component: AdminComponent}
 ];
 
