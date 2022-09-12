@@ -5,9 +5,10 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { AdminComponent } from './admin/admin.component';
 import { WebPageComponent } from './web-page/web-page.component';
-import { DashboardComponent } from './web-page/dashboard.component';
+import { DashboardComponent } from './admin/dashboard.component';
 import { GaleriaComponent } from './web-page/galeria/galeria.component';
 import { HomeComponent } from './web-page/home/home.component';
+import { NavbarComponent } from './web-page/navbar.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { HomeComponent } from './web-page/home/home.component';
     WebPageComponent,
     DashboardComponent,
     GaleriaComponent,
-    HomeComponent
+    HomeComponent,
+    NavbarComponent
   ],
   imports: [
     routes,
